@@ -1,0 +1,28 @@
+.slider {
+  overflow: hidden;
+  background: white;
+  padding: 1rem;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  animation: scroll 10s linear infinite;
+}
+
+.track span {
+  padding: 1rem 2rem;
+  background: #222;
+  color: white;
+  border-radius: 4px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

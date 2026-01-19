@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+}

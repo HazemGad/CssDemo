@@ -1,0 +1,11 @@
+.responsive-demo {
+  padding: clamp(1rem, 4vw, 4rem);
+}
+
+.responsive-demo h2 {
+  font-size: clamp(1.5rem, 3vw + 0.5rem, 3rem);
+}
+
+.responsive-demo p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}

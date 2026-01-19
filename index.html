@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo</title>
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/stacking.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+  <link rel="stylesheet" href="./styles/animation.css" />
+  <link rel="stylesheet" href="./styles/rtl.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>Demo</h1>
+  <button id="rtlToggle">Toggle RTL</button>
+</header>
+
+<main class="page">
+
+  <!-- STACKING CONTEXT -->
+  <section class="section">
+    <h2>1. Stacking Context & z-index</h2>
+    <div class="stacking-demo">
+      <div class="card">
+        Card (z-index: 1)
+      </div>
+
+
+      <div class="modal">
+        Modal (z-index: 999)
+      </div>
+    </div>
+  </section>
+
+  <!-- RESPONSIVE -->
+  <section class="section responsive-demo">
+    <h2>2. Responsive with clamp(), vw, calc()</h2>
+    <p>
+      Resize the viewport. Font size and spacing scale smoothly without media queries.
+    </p>
+  </section>
+
+  <!-- :HAS -->
+  <section class="section has-demo">
+    <h2>3. :has() Parent Selector</h2>
+    <label>
+      <input type="checkbox" />
+      Toggle card state
+    </label>
+
+    <div class="has-card"   >
+      Parent reacts to child state
+    </div>
+  </section>
+
+  <!-- SLIDER -->
+  <section class="section">
+    <h2>4. Infinite Slider</h2>
+    <div class="slider">
+      <div class="track">
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+        <span>HAZEM</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js" >
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.stacking-demo {
+  position: relative;
+  transform: translateZ(0);
+  padding: 2rem;
+  background: #e0e0e0;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  background: white;
+}
+
+.modal {
+  position: fixed;
+  inset: 20%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2rem;
+  z-index: 999;
+}

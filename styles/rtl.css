@@ -1,0 +1,19 @@
+html[dir="rtl"] .track {
+  animation-direction: reverse;
+}
+
+.has-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.has-card {
+  padding: 2rem;
+  background: #ccc;
+}
+
+.has-demo:has(input:checked) .has-card {
+  background: #4caf50;
+  color: white;
+}
